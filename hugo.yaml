@@ -2,7 +2,7 @@
 baseURL: https://nitelphyoe.github.io
 
 languageCode: en
-title: "Nitel's Blog"
+title: "Nitel's Red Logs"
 
 # Use Hugo modules to add theme
 module:
@@ -24,7 +24,7 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "Nitel's Blog"
+    title: "Nitel's Red Logs"
     weight: 1
   # bn:
   #   languageCode: bn
@@ -65,14 +65,14 @@ params:
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   logo:
-    main: /images/site/main-logo.png
-    inverted: /images/site/inverted-logo.png
+    main: /images/site/logo.png
+    inverted: /images/site/logo-transparent.png
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/NitelPhyoe/blog.git
+  # gitRepo: https://github.com/NitelPhyoe/blog.git
   # Default branch of your Git repo
-  gitBranch: main
+  # gitBranch: main
 
   # Configure the number of section title visible in the top navbar
   topNavbar:
@@ -88,11 +88,11 @@ params:
 
     # Configure theme color settings
     theme:
-      enable: false
+      enable: true
       services:
         light: true # enable light theme. default "true"
         dark: true # enable dark theme. default "true"
-        default: light # can be either light, dark or system. default "system"
+        default: dark # can be either light, dark or system. default "system"
 
     # Enable and configure portfolio
     portfolio:
@@ -107,9 +107,9 @@ params:
         facebook: true
         twitter: true
         linkedin: true
-        reddit: true
-        whatsapp: true
-        email: true
+        # reddit: true
+        # whatsapp: true
+        # email: true
         # tumblr: true
         # pocket: true
         # diaspora: true
@@ -193,7 +193,7 @@ params:
     # Show tags under the post title
     tags:
       enable: true
-      on_card: true # enables tags in post cards
+      on_card: false # enables tags in post cards
 
     # Specify whether to show flag in the language selector. Default is true.
     flags:
@@ -276,7 +276,7 @@ params:
 
     # Number of posts to show to each page. Default is "12"
     pagination:
-      maxPostsPerPage: 12
+      maxPostsPerPage: 10
 
   # Provide footer configuration.
   footer:
@@ -286,12 +286,12 @@ params:
     template: footer.html
     # Show/hide navigation in the footer. Default is "true".
     navigation:
-      enable: true
+      enable: false
       # show custom menus in the footer
       customMenus: true
     # Show/hide "Contact Me" section in the footer. Default is "true".
     contactMe:
-      enable: true
+      enable: false
     # Show/hide credentials section in the footer. Default is "true".
     credentials:
       enable: true

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+html * {
+  font-family:
+    "Atkinson Hyperlegible Next", "JetBrains Mono", monospace, sans-serif;
+}
+
+/* Increase landing page avatar size */
+.home img {
+  width: 280px;
+  height: 280px;
+  //   border: 4px solid #a20303;
+  padding: 0.1rem;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+}
+
+.home .greeting {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 30px rgba(34, 30, 30, 0.4);
+}
+/* Mobile adjustment */
+@media (max-width: 640px) {
+  .home .content img {
+    width: 180px;
+    height: 180px;
+  }
+}

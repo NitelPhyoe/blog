@@ -4,68 +4,140 @@ section:
   id: skills
   enable: true
   weight: 2
-  showOnNavbar: true
+  showOnNavbar: false
   filter: true
   # Can optionally hide the title in sections
   # hideTitle: true
 
 # filter buttons
 buttons:
-- name: All
-  filter: "all"
-- name: Basic
-  filter: "basic"
-- name: Language
-  filter: "language"
-- name: Container
-  filter: "container"
-- name: Others
-  filter: "others"
+  - name: All
+    filter: "all"
+  - name: Offensive Security
+    filter: "offensive"
+  - name: Tools
+    filter: "tools"
+  - name: Programming
+    filter: "programming"
+  - name: Platforms
+    filter: "platforms"
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
+
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  categories: ["container"]
-  url: "https://kubernetes.io/"
+  # -------------------------
+  # Offensive Security
+  # -------------------------
 
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  categories: ["basic", "language"]
-  url: "https://golang.org/"
+  - name: Active Directory
+    logo: /images/sections/skills/ad.png
+    summary: "Experience with AD enumeration, privilege escalation, lateral movement, and common attack paths in lab environments."
+    categories: ["offensive"]
 
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  categories: ["others"]
+  - name: Web Application Security
+    logo: /images/sections/skills/owasp.png
+    summary: "Familiar with OWASP Top 10 vulnerabilities, manual testing techniques, and exploitation fundamentals."
+    categories: ["offensive"]
 
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  categories: ["container"]
-  url: "https://www.docker.com/"
+  - name: Penetration Testing
+    logo: /images/sections/skills/pentest.png
+    summary: "Hands-on experience through TryHackMe and Hack The Box using structured testing methodologies."
+    categories: ["offensive"]
 
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  categories: ["basic"]
-  url: "https://prometheus.io/"
+  # -------------------------
+  # Security Tools
+  # -------------------------
 
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
+  - name: Burp Suite
+    logo: /images/sections/skills/burpsuite.svg
+    summary: "Web traffic interception, vulnerability testing, and manual exploitation."
+    categories: ["tools"]
 
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
-  url: "https://git-scm.com/"
+  - name: Nmap
+    logo: /images/sections/skills/nmap.png
+    summary: "Network scanning, service enumeration, and attack surface discovery."
+    categories: ["tools"]
 
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  categories: ["basic", "language"]
+  - name: Metasploit
+    logo: /images/sections/skills/metasploit.png
+    summary: "Basic exploitation and post-exploitation techniques in controlled lab environments."
+    categories: ["tools"]
+
+  - name: Hashcat
+    logo: /images/sections/skills/hc.png
+    summary: "Password cracking and hash analysis for credential auditing in controlled lab environments."
+    categories: ["tools"]
+
+  - name: NetExec (CrackMapExec)
+    logo: /images/sections/skills/nxc.svg
+    summary: "Post-exploitation framework for Active Directory enumeration and lateral movement testing."
+    categories: ["tools"]
+
+  - name: BloodHound
+    logo: /images/sections/skills/bloodhound.svg
+    summary: "Active Directory attack path analysis and privilege escalation mapping."
+    categories: ["tools"]
+
+  - name: PowerView
+    logo: /images/sections/skills/ps.png
+    summary: "PowerShell-based Active Directory enumeration and reconnaissance."
+    categories: ["tools"]
+
+  - name: Certipy
+    logo: /images/sections/skills/kali-tools.svg
+    summary: "Active Directory Certificate Services (AD CS) enumeration and exploitation techniques."
+    categories: ["tools"]
+
+  - name: BloodyAD
+    logo: /images/sections/skills/kali-tools.svg
+    summary: "Active Directory object manipulation and privilege escalation in lab environments."
+    categories: ["tools"]
+
+  # -------------------------
+  # Programming Background
+  # -------------------------
+
+  - name: Python
+    logo: /images/sections/skills/python.png
+    summary: "Used for scripting, automation, and security tooling."
+    categories: ["programming"]
+
+  - name: JavaScript
+    logo: /images/sections/skills/js.png
+    summary: "Experience in front-end and back-end web development."
+    categories: ["programming"]
+
+  - name: Java
+    logo: /images/sections/skills/java.png
+    summary: "Object-oriented programming and backend development fundamentals."
+    categories: ["programming"]
+
+  - name: C / C++
+    logo: /images/sections/skills/c++.png
+    summary: "Strong understanding of low-level programming concepts and memory management fundamentals."
+    categories: ["programming"]
+
+  - name: Flutter
+    logo: /images/sections/skills/flutter.png
+    summary: "Cross-platform mobile application development."
+    categories: ["programming"]
+
+  # -------------------------
+  # Platforms
+  # -------------------------
+
+  - name: Linux
+    logo: /images/sections/skills/linux.png
+    summary: "Primary environment for development and security testing. Comfortable with CLI and shell scripting."
+    categories: ["platforms"]
+
+  - name: Windows
+    logo: /images/sections/skills/windows.png
+    summary: "Understanding of Windows architecture and Active Directory environments."
+    categories: ["platforms"]
+
+  - name: Git
+    logo: /images/sections/skills/git.png
+    summary: "Version control using GitHub and GitLab workflows."
+    categories: ["platforms"]
