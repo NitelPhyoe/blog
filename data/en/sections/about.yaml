@@ -49,7 +49,7 @@ badges:
   - type: certification
     name: HackTheBox Certified Penetration Testing Specialist (HTB CPTS)
     url: "https://www.credly.com/badges/2ef6f25b-ae62-4452-abb9-99df2b44f7e9/public_url"
-    badge: "https://github.com/user-attachments/assets/7d0a656a-5d07-4ca4-b709-5fc113301794"
+    badge: "files/cpts.png"
 
   - type: certification
     name: Pritical Junior Penetration Tester (PJPT)
