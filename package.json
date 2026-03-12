@@ -27,7 +27,6 @@
       "typeit": "github.com/hugo-toha/toha/v4"
     }
   },
-  "dependencies": {},
   "devDependencies": {
     "@fontsource/mulish": "4.5.13",
     "@fortawesome/fontawesome-free": "^6.6.0",
@@ -51,8 +50,13 @@
     "mermaid": "^11.10.0",
     "plyr": "^3.7.2",
     "popper.js": "^1.16.1",
-    "typeit": "^8.8.7"
+    "typeit": "^8.8.7",
+    "wrangler": "^4.72.0"
   },
   "name": "hugo-toha.github.io",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  }
 }
